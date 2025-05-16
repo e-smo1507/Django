@@ -16,6 +16,7 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd"
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
@@ -38,7 +39,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'project',
+    'tailwind',
+    'app'
 ]
+
+TAILWIND_APP_NAME='app'
+INTERNAL_IPS=['127.0.0.1']
+
+NPM_BIN_PATH=''
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
